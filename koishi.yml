@@ -1,37 +1,39 @@
 host: localhost
 port: 5140
 maxPort: 5149
-
 plugins:
   group:basic:
-    help:
-    rate-limit:
-    locales:
-    commands:
-    ~admin:
-    ~bind:
+    help: null
+    rate-limit: null
+    locales: null
+    commands: null
+    ~admin: null
+    ~bind: null
   group:console:
     console:
       open: true
-    dataview:
-    logger:
-    insight:
+    dataview: null
+    logger: null
+    insight: null
     market:
       registry:
         endpoint: https://registry.npmmirror.com
       search:
         endpoint: https://registry.koishi.chat/index.json
-    sandbox:
-    status:
-    ~auth:
+    sandbox: null
+    status: null
+    ~auth: null
   group:database:
-    database-sqlite:
-    ~database-mysql:
-    ~database-mongo:
+    database-sqlite: null
+    ~database-mysql: null
+    ~database-mongo: null
   group:adapter:
-    ~adapter-onebot:
-    ~adapter-discord:
-    ~adapter-telegram:
-    ~adapter-kook:
-    ~adapter-feishu:
-    gocqhttp:
+    ~adapter-onebot: null
+    ~adapter-discord: null
+    adapter-telegram:
+      token: 1062638015:AAFckjDoF3-uUKFPYBsXa9UwlAEqbNEzJiw
+      protocol: polling
+    ~adapter-kook: null
+    ~adapter-feishu: null
+    gocqhttp: null
+  vits:88gwdl: {}
